@@ -1,7 +1,7 @@
 #!/bin/sh
 dir=$HOME/Library/Developer/Xcode/UserData/CodeSnippets
 if [ -L $dir ]; then
-    echo "already exists link"
+    echo "symlink already exists"
     exit
 elif [ -d $dir ]; then
     echo "copy files and remove old directory"
